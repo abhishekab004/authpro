@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{% extends "testapp/base.html" %}
+{% load static %}
+
+  
+{% block title %}  <title>homepage</title> {% endblock title %}
+  {% block body %}
+  <h1>Hello Everyone , welcome to online exam portal</h1>
+  <h2>You are free to attempt C and Ruby exam</h2>
+  <h2>Login required for Python and Java exam</h2>
+  <h3>All the best for your exams ......</h3>
+  <h4>Visit Again .......</h4>
+  <img src="{% static 'image/onlineexam.png' %}" alt="">
+  
+  {% endblock body %}

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+{% extends "testapp/base.html" %}
+{% load static %}
+
+{% block title %}  <title>login</title> {% endblock title %}
+
+  {% block body %}
+  <h1>Login Here to Write Exams</h1>
+   <form action="" method='post'>
+        {{form.as_p}}
+        {% csrf_token %}
+        <input type="submit" value="Login">
+    </form>
+  {% endblock body %}
